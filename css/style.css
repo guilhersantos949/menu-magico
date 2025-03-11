@@ -15,7 +15,7 @@ body{
     background: var(--crl);
 }
 .navegacao{
-    width: 400px;
+    width: 100%;
     height: 70px;
     background: #fff;
     display: flex;
@@ -23,20 +23,19 @@ body{
     align-items: center;
     border-radius: 10px;
 }
-.navegacao ul{
-    display: flex;
-    width: 350px;
-}
 li{
     list-style: none;
+    padding: 10px;
+    padding-bottom: 30px;
 }
-.navegacao ul li{
+ul{
     position: relative;
-    width: 70px;
+    display: flex;
+    width: 350px;
     height: 70px;
     z-index: 1;
 }
-.navegacao ul li a{
+a{
     position: relative;
     display: flex;
     justify-content: center;
@@ -46,7 +45,10 @@ li{
     text-align: center;
     font-weight: 500;
 }
-.navegacao ul li a .icone{
+.texto{
+    height: auto;
+}
+.icone{
     position: relative;
     display: block;
     line-height: 75px;
@@ -54,6 +56,6 @@ li{
     text-align: center;
     transition: var(--crl);
 }
-.navegacao ul li:hover a .icone{
+li:hover{
     transform: translateY(-50px);
 }
