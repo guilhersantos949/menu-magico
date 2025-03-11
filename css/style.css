@@ -5,19 +5,18 @@
     font-family: 'poppins', sans-serif;
 }
 :root{
-    --crl: #222327
+    --crl: #222327;
 }
 body{
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    min-height: 100vh;
     background: var(--crl);
 }
 .navegacao{
-    width: 450px;
-    height: 80px;
+    width: 400px;
+    height: 70px;
     background: #fff;
     display: flex;
     justify-content: center;
@@ -28,9 +27,11 @@ body{
     display: flex;
     width: 350px;
 }
+li{
+    list-style: none;
+}
 .navegacao ul li{
     position: relative;
-    list-style: none;
     width: 70px;
     height: 70px;
     z-index: 1;
@@ -44,4 +45,15 @@ body{
     width: 100%;
     text-align: center;
     font-weight: 500;
+}
+.navegacao ul li a .icone{
+    position: relative;
+    display: block;
+    line-height: 75px;
+    font-size: 1.5em;
+    text-align: center;
+    transition: var(--crl);
+}
+.navegacao ul li:hover a .icone{
+    transform: translateY(-50px);
 }
