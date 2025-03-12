@@ -1,6 +1,6 @@
 body{
     height: 100vh;
-    background-color: black;
+    background-color: rgb(44, 44, 44);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -38,13 +38,20 @@ a{
     font-size: 25px;
     color: #280808;
     position: relative;
+    transition: .5s;
 }
 .texto{
-    color: #280808;
+    color: #000000;
     position: absolute;
     opacity: 0;
+    transition: .5s;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 li:hover a .icone{
     transform: translatey(-35px);
     color: red;
+}
+li:hover .texto{
+    opacity: 1;
+    transform: translateY(10px);
 }
