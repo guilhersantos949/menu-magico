@@ -12,16 +12,14 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-}
-ul{
-  width: 350px;
-  display: flex;  
+    position: relative;
 }
 li{
     width: 70px;
     height: 70px;
     list-style: none;
     position: relative;
+    
 }
 a{
     width: 100%;
@@ -54,4 +52,12 @@ li:hover a .icone{
 li:hover .texto{
     opacity: 1;
     transform: translateY(10px);
+}
+.indicador{
+    width: 70px;
+    height: 70px;
+    background-color: orangered;
+    border-radius: 50%;
+    position: absolute;
+    top: -50%;
 }
