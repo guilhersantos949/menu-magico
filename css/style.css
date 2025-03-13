@@ -19,6 +19,7 @@ li{
     height: 70px;
     list-style: none;
     position: relative;
+    z-index: 1;
     
 }
 a{
@@ -47,7 +48,7 @@ a{
 }
 li:hover a .icone{
     transform: translatey(-35px);
-    color: red;
+    color: white;
 }
 li:hover .texto{
     opacity: 1;
