@@ -2,7 +2,7 @@ const lista = document.querySelectorAll('.lista');
 
 function ativaLink(){
     for(let i of lista){
-        i.classList.remove('ativo')
+        li.classList.remove('ativo')
     }
     this.classList.add('ativo')
 }
