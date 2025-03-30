@@ -1,12 +1,12 @@
 const lista = document.querySelectorAll('.lista');
 
 function ativaLink(){
-    for(let i of lista){
-        li.classList.remove('ativo')
-    }
-    this.classList.add('ativo')
+    lista.forEach((item) => {
+        item.classList.remove('active');
+    });
+    this.classList.add('active');
 }
 
-for(let i of lista){
-    i.addEventListener('click', ativalink)
-}
+lista.forEach((item) => {
+    item.addEventListener('click', ativaLink);
+});

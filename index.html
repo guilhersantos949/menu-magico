@@ -5,42 +5,38 @@
     <meta charset="UTF-8"> <!-- Define a codificação de caracteres para UTF-8 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura a viewport para responsividade -->
     <title>Menu magico</title> <!-- Título da página -->
-    <link rel="stylesheet" href="css/style.css"> <!-- Link para o arquivo CSS externo -->
+    <link rel="stylesheet" href="style.css"> <!-- Link para o arquivo CSS externo -->
 </head>
 
 <body>
-    <div class="navegacao"> <!-- Início da navegação -->
-        <li class="lista"> <!-- Item da lista de navegação -->
-            <a href="#"> <!-- Link de navegação -->
-                <span class="icone"><ion-icon name="home"></ion-icon></span> <!-- Ícone de casa -->
-                <span class="texto">Inicio</span> <!-- Texto do link -->
-            </a>
-        </li>
-        <li class="lista"> <!-- Outro item da lista de navegação -->
-            <a href="#">
-                <span class="icone"><ion-icon name="images"></ion-icon></ion-icon></span> <!-- Ícone de imagens -->
-                <span class="texto">foto</span> <!-- Texto do link -->
-            </a>
-        </li>
-        <li class="lista"> <!-- Outro item da lista de navegação -->
-            <a href="#">
-                <span class="icone"><ion-icon name="chatbox-ellipses"></ion-icon></ion-icon></span> <!-- Ícone de mensagem -->
-                <span class="texto">Mensagem</span> <!-- Texto do link -->
-            </a>
-        </li>
-        <li class="lista"> <!-- Outro item da lista de navegação -->
-            <a href="#">
-                <span class="icone"><ion-icon name="folder-open"></ion-icon></ion-icon></span> <!-- Ícone de pasta aberta -->
-                <span class="texto">Aquivos</span> <!-- Texto do link -->
-            </a>
-        </li>
-        <li class="lista"> <!-- Outro item da lista de navegação -->
-            <a href="#">
-                <span class="icone"><ion-icon name="settings"></ion-icon></ion-icon></span> <!-- Ícone de configurações -->
-                <span class="texto">Configuração</span> <!-- Texto do link -->
-            </a>
-        </li>
-        <div class="indicador"></div> <!-- Indicador de navegação -->
+    <div class="navegacao">
+        <ul>
+            <li class="lista active">
+                <a href="#">
+                    <span class="icone"><ion-icon name="home"></ion-icon></span>
+                    <span class="texto">Inicio</span>
+                </a>
+            </li>
+            <li class="lista">
+                <a href="#">
+                    <span class="icone"><ion-icon name="images"></ion-icon></span>
+                    <span class="texto">Imagens</span>
+                </a>
+            </li>
+            <li class="lista">
+                <a href="#">
+                    <span class="icone"><ion-icon name="chatbox-ellipses"></ion-icon></span>
+                    <span class="texto">contatos</span>
+                </a>
+            </li>
+            <li class="lista">
+                <a href="#">
+                    <span class="icone"><ion-icon name="settings"></ion-icon></ion-icon></span>
+                    <span class="texto">conficuração</span>
+                </a>
+            </li>
+            <div class="indicador"></div>
+        </ul>
     </div>
     
     <script src="js/index.js"></script> <!-- Link para o arquivo JavaScript externo -->

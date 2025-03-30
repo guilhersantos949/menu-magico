@@ -1,0 +1,85 @@
+body{
+    height: 100vh; /* Define a altura do corpo da página para 100% da altura da viewport */
+    background-color: rgb(44, 44, 44); /* Define a cor de fundo do corpo da página */
+    display: flex; /* Utiliza o layout flexbox */
+    align-items: center; /* Alinha os itens ao centro verticalmente */
+    justify-content: center; /* Alinha os itens ao centro horizontalmente */
+}
+
+.navegacao{
+    width: 100%; /* Define a largura da navegação para 100% do contêiner pai */
+    height: 70px; /* Define a altura da navegação */
+    background-color: white; /* Define a cor de fundo da navegação */
+    display: flex; /* Utiliza o layout flexbox */
+    align-items: center; /* Alinha os itens ao centro verticalmente */
+    justify-content: center; /* Alinha os itens ao centro horizontalmente */
+    position: relative; /* Define a posição relativa para a navegação */
+}
+
+ul{
+    width: 350px;
+    display: flex;
+}
+li{
+    width: 70px;
+    height: 70px;
+    list-style-type: none;
+    position: relative;
+    z-index: 1;
+}
+a{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-decoration: none;
+    position: relative;
+}
+.icone{
+    display: block;
+    line-height: 75px;
+    font-size: 25px;
+    color: black;
+    position: relative;
+}
+.texto{
+    color: rgb(44, 44, 44);
+    position: absolute;
+    opacity: 0;
+    transform: translateY(20px);
+}
+.indicador{
+    width: 70px;
+    height: 70px;
+    background-color: rgb(47, 0, 255);
+    border-radius: 50%;
+    position: absolute;
+    top: -50%;
+}
+li.active .icone{
+    transform: translateY(-35px);
+    color: rgb(124, 124, 124);
+    transition: .5s;
+}
+li.active .texto{
+    opacity: 1;
+    transform: translateY(10px);
+    transition: .5s;
+}
+li:nth-child(1).active ~ .indicador{
+    transform: translateX(calc(70px * 0));
+    transition: .5s;
+}
+li:nth-child(2).active ~ .indicador{
+    transform: translateX(calc(70px * 1));
+    transition: .5s;
+}
+li:nth-child(3).active ~ .indicador{
+    transform: translateX(calc(70px * 2));
+    transition: .5s;
+}
+li:nth-child(4).active ~ .indicador{
+    transform: translateX(calc(70px * 3));
+    transition: .5s;
+}
